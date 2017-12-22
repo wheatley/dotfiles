@@ -29,3 +29,12 @@ for file in $files; do
 	echo "Creating symlink to $file in home directory."
 	ln -s $dir/.$file ~/.$file
 done
+
+echo "moving into dotfiles folder to install oh-my-zsh"
+cd ~/dotfiles
+git submodule init
+git submodule update
+echo "finished installing oh-my-zsh"
+
+# make zsh default
+chsh -s $(which zsh)
