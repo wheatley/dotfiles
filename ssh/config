@@ -1,0 +1,12 @@
+Host *
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_rsa
+
+Host assist
+  HostName assist
+  IdentityFile ~/.ssh/sugarcrm_rsa
+
+Host github.com
+  Hostname github.com
+  IdentityFile ~/.ssh/github_rsa
