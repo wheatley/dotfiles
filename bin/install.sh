@@ -38,3 +38,4 @@ echo "finished installing oh-my-zsh"
 
 # make zsh default
 chsh -s $(which zsh)
+chsh -s /bin/zsh
